@@ -3,16 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amarini- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/01 07:39:51 by amarini-          #+#    #+#             */
-/*   Updated: 2020/09/29 12:08:19 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/06/02 14:21:51 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
-#include "libft.h"
+#include "../../libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {

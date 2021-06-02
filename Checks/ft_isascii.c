@@ -3,17 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amarini- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/01 09:18:55 by amarini-          #+#    #+#             */
-/*   Updated: 2020/09/07 15:37:26 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/06/02 12:42:47 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
+#include "../libft.h"
 
-int		ft_isascii(int c)
+int	ft_isascii(int c)
 {
 	if (c < 0 || c > 127)
 		return (0);

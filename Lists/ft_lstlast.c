@@ -3,17 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amarini- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/15 10:10:26 by amarini-          #+#    #+#             */
-/*   Updated: 2020/09/15 12:02:16 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/06/02 14:14:29 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include "libft.h"
+#include "../libft.h"
 
 t_list	*ft_lstlast(t_list *lst)
 {

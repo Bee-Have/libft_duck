@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amarini- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/01 10:22:02 by amarini-          #+#    #+#             */
-/*   Updated: 2020/09/11 11:39:54 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/06/02 14:21:43 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
+#include "../../libft.h"
 
 void	*ft_memset(void *b, int c, size_t len)
 {

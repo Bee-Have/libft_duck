@@ -3,17 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amarini- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/01 07:42:00 by amarini-          #+#    #+#             */
-/*   Updated: 2020/09/22 16:26:52 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/06/02 14:22:33 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include "libft.h"
+#include "../libft.h"
 
 char	*fill_str(char const *src, char *dst, int index)
 {

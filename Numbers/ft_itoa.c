@@ -3,18 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amarini- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/01 09:24:18 by amarini-          #+#    #+#             */
-/*   Updated: 2020/09/14 15:29:32 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/06/02 14:17:31 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
-#include <stdlib.h>
+#include "../libft.h"
 
-static	int			ft_countnbr(int n, int nbr)
+static int	ft_countnbr(int n, int nbr)
 {
 	int		count;
 
@@ -31,18 +29,18 @@ static	int			ft_countnbr(int n, int nbr)
 	return (count);
 }
 
-unsigned int		check_negative(int n)
+unsigned int	check_negative(int n)
 {
 	if (n < 0)
 		return (n * -1);
 	return (n);
 }
 
-char				*ft_itoa(int n)
+char	*ft_itoa(int n)
 {
-	int					ncount;
-	unsigned int		nbr;
-	char				*str;
+	int				ncount;
+	unsigned int	nbr;
+	char			*str;
 
 	ncount = 0;
 	nbr = check_negative(n);

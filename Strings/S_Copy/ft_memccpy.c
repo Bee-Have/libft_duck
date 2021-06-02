@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memccpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amarini- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/01 09:40:09 by amarini-          #+#    #+#             */
-/*   Updated: 2020/09/07 16:06:50 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/06/02 14:21:27 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
+#include "../../libft.h"
 
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {

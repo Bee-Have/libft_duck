@@ -6,11 +6,11 @@
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/01 09:59:52 by amarini-          #+#    #+#             */
-/*   Updated: 2021/06/02 12:38:08 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/06/02 14:46:46 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
@@ -18,22 +18,21 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	char	*dstcopy;
 	char	*srccopy;
 
-	i = 0;
 	dstcopy = (char *)dst;
 	srccopy = (char *)src;
 	if ((!dst && !src) || src == dst)
 		return (srccopy);
 	if (dst < src)
-		while (i < len)
-		{
-			dstcopy[i] = srccopy[i];
+		i = 0;
+	else
+		i = len;
+	while ((dst < src && i < len) || (dst > src && i > 0))
+	{
+		dstcopy[i] = srccopy[i];
+		if (dst < src)
 			i++;
-		}
-	else if (dst > src)
-		while (len > 0)
-		{
-			len--;
-			dstcopy[len] = srccopy[len];
-		}
+		else
+			i--;
+	}
 	return (dstcopy);
 }

@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amarini- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/01 07:32:53 by amarini-          #+#    #+#             */
-/*   Updated: 2020/09/01 07:35:09 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/06/02 12:43:46 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "../libft.h"
 
-int		ft_strlen(const char *s)
+int	ft_strlen(const char *s)
 {
 	int		len;
 

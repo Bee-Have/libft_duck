@@ -3,19 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amarini- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/01 08:57:15 by amarini-          #+#    #+#             */
-/*   Updated: 2020/09/29 15:23:55 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/06/02 14:16:35 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include "libft.h"
+#include "../libft.h"
 
-int		count_digit(const char *str, int index)
+int	count_digit(const char *str, int index)
 {
 	int		i;
 
@@ -29,7 +26,7 @@ int		count_digit(const char *str, int index)
 	return (i);
 }
 
-int		convert_res(const char *str, unsigned long int nbr, int index)
+int	convert_res(const char *str, unsigned long int nbr, int index)
 {
 	unsigned long int	max;
 
@@ -45,7 +42,7 @@ int		convert_res(const char *str, unsigned long int nbr, int index)
 	return (nbr);
 }
 
-int		ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
 	int					i;
 	int					index;
@@ -54,7 +51,7 @@ int		ft_atoi(const char *str)
 	i = 0;
 	res = 0;
 	while (str[i] == ' ' || str[i] == '\t' || str[i] == '\n'
-			|| str[i] == '\v' || str[i] == '\f' || str[i] == '\r')
+		|| str[i] == '\v' || str[i] == '\f' || str[i] == '\r')
 		i++;
 	index = i;
 	if (str[i] == '-' || str[i] == '+')

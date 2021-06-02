@@ -3,17 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amarini- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/02 09:19:40 by amarini-          #+#    #+#             */
-/*   Updated: 2020/09/02 09:20:59 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/06/02 14:48:33 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
+#include "../libft.h"
 
-int		ft_toupper(int c)
+int	ft_toupper(int c)
 {
 	if (!c)
 		return (0);

@@ -3,17 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amarini- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/15 10:11:34 by amarini-          #+#    #+#             */
-/*   Updated: 2020/09/16 13:52:56 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/06/02 14:11:35 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include "libft.h"
+#include "../libft.h"
 
 void	ft_lstadd_back(t_list **alst, t_list *new)
 {

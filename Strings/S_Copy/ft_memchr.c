@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amarini- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/01 09:46:20 by amarini-          #+#    #+#             */
-/*   Updated: 2020/09/11 15:40:06 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/06/02 14:21:33 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
+#include "../../libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

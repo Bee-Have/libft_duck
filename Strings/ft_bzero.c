@@ -3,16 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amarini- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/01 09:11:14 by amarini-          #+#    #+#             */
-/*   Updated: 2020/09/11 11:57:13 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/06/02 14:22:20 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <unistd.h>
-#include <stdlib.h>
+#include "../libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {
