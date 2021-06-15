@@ -6,13 +6,13 @@
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/15 10:17:09 by amarini-          #+#    #+#             */
-/*   Updated: 2021/06/02 14:13:00 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/06/15 10:53:13 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
+t_list	*ft_lstmap(t_list *lst, int (*f)(int), void (*del)(int *))
 {
 	t_list	*new;
 	t_list	*head;

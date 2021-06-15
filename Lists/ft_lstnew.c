@@ -6,23 +6,24 @@
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/14 16:43:17 by amarini-          #+#    #+#             */
-/*   Updated: 2021/06/02 14:13:08 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/06/15 12:12:53 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-t_list	*ft_lstnew(void *content)
+t_list	*ft_lstnew(int content)
 {
-	char	*value;
+	int		value;
 	t_list	*head;
 
-	value = (char *)content;
+	value = content;
 	head = NULL;
 	head = (t_list *)malloc(sizeof(t_list));
 	if (!head)
 		return (NULL);
 	head->content = value;
+	head->null = 0;
 	head->next = NULL;
 	return (head);
 }
