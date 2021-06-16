@@ -6,11 +6,11 @@
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/02 09:16:41 by amarini-          #+#    #+#             */
-/*   Updated: 2021/06/02 14:48:29 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/06/16 14:25:47 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "../../Includes/libft.h"
 
 int	ft_tolower(int c)
 {

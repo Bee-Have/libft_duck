@@ -6,11 +6,11 @@
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/14 16:43:17 by amarini-          #+#    #+#             */
-/*   Updated: 2021/06/15 12:12:53 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/06/16 14:23:57 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "../../Includes/libft.h"
 
 t_list	*ft_lstnew(int content)
 {

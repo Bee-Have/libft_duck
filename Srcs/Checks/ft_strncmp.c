@@ -6,11 +6,11 @@
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/01 10:41:17 by amarini-          #+#    #+#             */
-/*   Updated: 2021/06/02 12:43:53 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/06/16 14:21:01 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "../../Includes/libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

@@ -6,11 +6,11 @@
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/02 09:11:40 by amarini-          #+#    #+#             */
-/*   Updated: 2021/06/02 12:44:12 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/06/16 14:21:08 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "../../Includes/libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {

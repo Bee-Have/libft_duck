@@ -6,7 +6,7 @@
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/02 12:38:44 by amarini-          #+#    #+#             */
-/*   Updated: 2021/06/15 15:01:02 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/06/16 14:54:28 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,14 @@ char			*ft_strnstr(const char *haystack, const char *needle,
 					size_t len);
 char			*ft_strrchr(const char *s, int c);
 
+//Digits
+int				count_digit(const char *str, int index);
+int				convert_res(const char *str, unsigned long int nbr, int index);
+int				ft_atoi(const char *str);
+int				ft_countnbr(int n, int nbr);
+unsigned int	check_negative(int n);
+char			*ft_itoa(int n);
+
 //Lists
 typedef struct s_list
 {
@@ -52,14 +60,6 @@ t_list			*ft_lstmap(t_list *lst, int (*f)(int),
 					void (*del)(int *));
 t_list			*ft_lstnew(int content);
 int				ft_lstsize(t_list *lst);
-
-//Numbers
-int				ft_atoi(const char *str);
-int				convert_res(const char *str, unsigned long int nbr, int index);
-int				count_digit(const char *str, int index);
-char			*ft_itoa(int n);
-unsigned int	check_negative(int n);
-static int		ft_countnbr(int n, int nbr);
 
 //Printing
 

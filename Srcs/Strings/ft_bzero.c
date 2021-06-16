@@ -6,11 +6,11 @@
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/01 09:11:14 by amarini-          #+#    #+#             */
-/*   Updated: 2021/06/02 14:22:20 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/06/16 14:25:24 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "../../Includes/libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

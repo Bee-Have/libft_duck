@@ -6,35 +6,11 @@
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/01 09:24:18 by amarini-          #+#    #+#             */
-/*   Updated: 2021/06/02 14:17:31 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/06/16 14:54:40 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
-
-static int	ft_countnbr(int n, int nbr)
-{
-	int		count;
-
-	count = 0;
-	while (nbr > 0 || nbr < 0)
-	{
-		nbr = nbr / 10;
-		count++;
-	}
-	if (n < 0)
-		count++;
-	if (n == 0)
-		return (1);
-	return (count);
-}
-
-unsigned int	check_negative(int n)
-{
-	if (n < 0)
-		return (n * -1);
-	return (n);
-}
+#include "../../Includes/libft.h"
 
 char	*ft_itoa(int n)
 {
@@ -63,4 +39,28 @@ char	*ft_itoa(int n)
 	if (n < 0)
 		str[ncount - 1] = '-';
 	return (str);
+}
+
+int	ft_countnbr(int n, int nbr)
+{
+	int		count;
+
+	count = 0;
+	while (nbr > 0 || nbr < 0)
+	{
+		nbr = nbr / 10;
+		count++;
+	}
+	if (n < 0)
+		count++;
+	if (n == 0)
+		return (1);
+	return (count);
+}
+
+unsigned int	check_negative(int n)
+{
+	if (n < 0)
+		return (n * -1);
+	return (n);
 }

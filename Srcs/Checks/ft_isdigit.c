@@ -6,11 +6,11 @@
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/01 07:35:46 by amarini-          #+#    #+#             */
-/*   Updated: 2021/06/02 12:42:57 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/06/16 14:20:33 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "../../Includes/libft.h"
 
 int	ft_isdigit(int c)
 {

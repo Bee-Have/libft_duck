@@ -6,11 +6,11 @@
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/15 10:11:34 by amarini-          #+#    #+#             */
-/*   Updated: 2021/06/02 14:11:35 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/06/16 14:23:31 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "../../Includes/libft.h"
 
 void	ft_lstadd_back(t_list **alst, t_list *new)
 {

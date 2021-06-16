@@ -6,11 +6,11 @@
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/01 07:42:38 by amarini-          #+#    #+#             */
-/*   Updated: 2021/06/02 14:48:23 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/06/16 14:25:44 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "../../Includes/libft.h"
 
 int	set_occurence(char const *set, char current, int i)
 {

@@ -6,11 +6,11 @@
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/01 09:49:56 by amarini-          #+#    #+#             */
-/*   Updated: 2021/06/02 12:45:04 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/06/16 14:20:41 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "../../Includes/libft.h"
 
 int	compare(unsigned char chr1, unsigned char chr2)
 {
