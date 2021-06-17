@@ -6,7 +6,7 @@
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/02 12:38:44 by amarini-          #+#    #+#             */
-/*   Updated: 2021/06/16 14:54:28 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/06/16 16:11:03 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,9 +44,7 @@ char			*ft_itoa(int n);
 //Lists
 typedef struct s_list
 {
-	int				index;
 	int				content;
-	int				null;
 	struct s_list	*next;
 }					t_list;
 
