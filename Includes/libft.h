@@ -6,7 +6,7 @@
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/02 12:38:44 by amarini-          #+#    #+#             */
-/*   Updated: 2021/06/16 16:11:03 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/06/25 14:16:37 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,8 +35,8 @@ char			*ft_strrchr(const char *s, int c);
 
 //Digits
 int				count_digit(const char *str, int index);
-int				convert_res(const char *str, unsigned long int nbr, int index);
-int				ft_atoi(const char *str);
+int				convert_res(const char *str, long long int nbr, int index);
+long long 		ft_atoi(const char *str);
 int				ft_countnbr(int n, int nbr);
 unsigned int	check_negative(int n);
 char			*ft_itoa(int n);
