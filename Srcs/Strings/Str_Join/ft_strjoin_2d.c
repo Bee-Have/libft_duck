@@ -6,7 +6,7 @@
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/28 17:26:45 by amarini-          #+#    #+#             */
-/*   Updated: 2021/06/29 11:51:35 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/06/29 12:13:30 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char	**ft_strjoin_2d(char const **s1, char const **s2)
 {
 	int		i;
 	int		j;
-	char	*str;
+	char	**str;
 	int		len_s1;
 	int		len_s2;
 

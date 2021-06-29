@@ -6,7 +6,7 @@
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/02 12:38:44 by amarini-          #+#    #+#             */
-/*   Updated: 2021/06/28 18:44:11 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/06/29 12:37:37 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,6 +62,8 @@ t_list			*ft_lstnew(long long int content);
 int				ft_lstsize(t_list *lst);
 
 //Printing
+void			ft_write(char c);
+void			ft_putchar(char *str);
 
 //Strings
 //S_Copy
