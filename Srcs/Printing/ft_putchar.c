@@ -1,22 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_write.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/06/29 12:36:00 by amarini-          #+#    #+#             */
-/*   Updated: 2021/06/29 12:37:57 by amarini-         ###   ########.fr       */
+/*   Created: 2021/06/29 12:34:41 by amarini-          #+#    #+#             */
+/*   Updated: 2021/06/29 13:59:51 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../Includes/libft.h"
 
-void	ft_putchar(char *str)
+void	ft_putchar(char c)
 {
-	int		length;
-
-	length = ft_strlen(str);
-	write(1, str, length);
+	if (ft_isprint(c) == 0)
+		return ;
+	write(1, &c, 1);
 	return ;
 }

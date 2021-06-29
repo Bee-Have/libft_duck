@@ -6,11 +6,11 @@
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/01 07:42:00 by amarini-          #+#    #+#             */
-/*   Updated: 2021/06/29 11:51:38 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/06/29 17:11:44 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../../Includes/libft.h"
+#include "../../Includes/libft.h"
 
 char	*fill_str(char const *src, char *dst, int index)
 {

@@ -1,28 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_print_tab.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/09/14 16:43:17 by amarini-          #+#    #+#             */
-/*   Updated: 2021/06/28 14:03:18 by amarini-         ###   ########.fr       */
+/*   Created: 2021/06/29 16:39:22 by amarini-          #+#    #+#             */
+/*   Updated: 2021/06/29 17:26:24 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../Includes/libft.h"
 
-t_list	*ft_lstnew(long long int content)
+void	ft_print_tab(char **tab)
 {
-	long long int	value;
-	t_list			*head;
+	int		row;
 
-	value = content;
-	head = NULL;
-	head = (t_list *)malloc(sizeof(t_list));
-	if (!head)
-		return (NULL);
-	head->content = value;
-	head->next = NULL;
-	return (head);
+	if (!tab)
+		return ;
+	row = 0;
+	while (row < ft_strlen_2d((const char **)tab))
+	{
+		write(1, tab[row], ft_strlen(tab[row]));
+		write(1, "-", 1);
+		row++;
+	}
+	write(1, "\n", 1);
+	return ;
 }

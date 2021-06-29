@@ -6,12 +6,12 @@
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/01 08:57:15 by amarini-          #+#    #+#             */
-/*   Updated: 2021/06/25 15:05:21 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/06/28 12:28:43 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../Includes/libft.h"
-#include "../../../push_swap.h"
+// #include "../../../push_swap.h"
 
 int	count_digit(const char *str, int index)
 {
@@ -27,27 +27,27 @@ int	count_digit(const char *str, int index)
 	return (i);
 }
 
-int	convert_res(const char *str, long long int nbr, int index)
+long long int	convert_res(const char *str, long long int nbr, int index)
 {
 	long long int	max;
 
-	max = 2147483647;
-	if (str[index] == '-' && (nbr > (max + 1) || count_digit(str, index) > 11))
-		return (error_message());
-	else if (nbr > max || count_digit(str, index) > 10)
-		return (error_message());
+	max = 9223372036854775807;
+	if (str[index] == '-' && (nbr > max || count_digit(str, index) > 19))
+		return (nbr);
+	else if (nbr > max || count_digit(str, index) > 19)
+		return (nbr);
 	if (str[index] == '-')
 		nbr *= -1;
 	if (nbr == 1 && count_digit(str, index) >= 3)
-		return (error_message());
+		return (0);
 	return (nbr);
 }
 
-long long int	ft_atoi(const char *str)
+long long	ft_atoi(const char *str)
 {
 	int					i;
 	int					index;
-	long long int	res;
+	long long int		res;
 
 	i = 0;
 	res = 0;
