@@ -6,7 +6,7 @@
 #    By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/15 16:55:27 by amarini-          #+#    #+#              #
-#    Updated: 2021/06/17 10:53:29 by amarini-         ###   ########.fr        #
+#    Updated: 2021/06/29 11:51:19 by amarini-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,7 @@ SRCS = ft_isalnum.c ft_isalpha.c \
 		ft_isprint.c ft_memcmp.c \
 		ft_strchr.c ft_strlen.c \
 		ft_strnstr.c ft_strncmp.c \
-		ft_strrchr.c \
+		ft_strrchr.c\
 		ft_atoi.c ft_itoa.c \
 		ft_lstadd_back.c ft_lstadd_front.c \
 		ft_lstclear.c ft_lstdelone.c \
@@ -39,8 +39,8 @@ SRCS = ft_isalnum.c ft_isalpha.c \
 		ft_strlcat.c ft_strlcpy.c \
 		ft_strmapi.c ft_substr.c \
 		ft_bzero.c ft_memmove.c \
-		ft_split.c ft_strjoin.c \
-		ft_strtrim.c ft_tolower.c \
+		ft_split.c ft_strjoin.c ft_strjoin_2d.c\
+		ft_strtrim.c ft_strtrim_2d.c ft_tolower.c \
 		ft_toupper.c
 OBJS = $(addprefix $(OBJS_DIR)/,$(SRCS:.c=.o))
 
