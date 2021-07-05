@@ -17,6 +17,8 @@ int	ft_strlen_2d(const char **s)
 	int		len;
 
 	len = 0;
+	if (!s)
+		return (-1);
 	while (s[len] != NULL)
 		len++;
 	return (len);
