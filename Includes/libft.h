@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/02 12:38:44 by amarini-          #+#    #+#             */
-/*   Updated: 2021/06/29 17:22:02 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/07/06 20:16:42 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ char			**ft_strjoin_2d(char **s1, char **s2);
 char			**ft_erase(char **str, int start, int amount);
 char			**ft_add_tab(char **tab, char *str);
 char			**ft_make_tab(char *str);
+char			**ft_tabdup(char **tab);
 
 //Checks
 int				ft_isalnum(int c);

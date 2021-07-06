@@ -23,6 +23,7 @@ char	**ft_erase(char **str, int start, int amount)
 	result = (char **)malloc((length + 1) * sizeof(char *));
 	if (!result)
 		return (NULL);
+	result[length] = NULL;
 	while (i < length)
 	{
 		result[i] = ft_strdup(str[amount + i]);

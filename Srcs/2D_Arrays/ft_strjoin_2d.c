@@ -29,6 +29,7 @@ char	**ft_strjoin_2d(char **s1, char **s2)
 	str = (char **)malloc((len_s1 + len_s2 + 1) * sizeof(char *));
 	if (!str)
 		return (NULL);
+	str[len_s1 + len_s2] = NULL;
 	while (i < len_s1)
 	{
 		str[i] = ft_strdup(s1[j]);

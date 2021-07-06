@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+         #
+#    By: user42 <user42@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/15 16:55:27 by amarini-          #+#    #+#              #
-#    Updated: 2021/06/29 17:22:23 by amarini-         ###   ########.fr        #
+#    Updated: 2021/07/06 20:21:12 by user42           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,7 @@ vpath %.c $(foreach dir, $(SRCS_DIR), $(dir):)
 
 SRCS = ft_add_tab.c ft_erase.c \
 		ft_strjoin_2d.c ft_strlen_2d.c \
-		ft_make_tab.c \
+		ft_make_tab.c ft_tabdup.c \
 		ft_isalnum.c ft_isalpha.c \
 		ft_isascii.c ft_isdigit.c \
 		ft_isprint.c ft_memcmp.c \

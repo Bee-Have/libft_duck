@@ -1,31 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_tabdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/09/01 07:41:27 by amarini-          #+#    #+#             */
-/*   Updated: 2021/06/16 14:24:59 by amarini-         ###   ########.fr       */
+/*   Created: 2021/07/06 20:11:32 by user42            #+#    #+#             */
+/*   Updated: 2021/07/06 20:20:20 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../../Includes/libft.h"
+#include "../../Includes/libft.h"
 
-char	*ft_strdup(const char *s1)
+char	**ft_tabdup(char **tab)
 {
+	char	**copy;
+	int		length;
 	int		i;
-	char	*cp;
 
 	i = 0;
-	cp = (char *)malloc(sizeof(char) * (ft_strlen(s1) + 1));
-	if (!cp)
+	length = ft_strlen_2d(tab);
+	copy = (char **)malloc((length + 1) * sizeof(char *));
+	if (!copy)
 		return (NULL);
-	cp[ft_strlen(s1)] = '\0';
-	while (s1[i] != '\0')
+	copy[length] = NULL;
+	while (i < length)
 	{
-		cp[i] = s1[i];
+		copy[i] = ft_strdup(tab[i]);
 		i++;
 	}
-	return (cp);
+	free(tab);
+	return (copy);
 }
