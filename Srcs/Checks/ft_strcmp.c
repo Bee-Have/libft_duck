@@ -1,34 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tabdup.c                                        :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/06 20:11:32 by user42            #+#    #+#             */
-/*   Updated: 2021/07/12 19:03:22 by amarini-         ###   ########.fr       */
+/*   Created: 2021/07/12 18:15:29 by amarini-          #+#    #+#             */
+/*   Updated: 2021/07/12 18:20:25 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../Includes/libft.h"
 
-char	**ft_tabdup(char **tab)
+int	ft_strcmp(const char *s1, const char *s2)
 {
-	char	**copy;
-	int		length;
-	int		i;
+	int	i;
 
 	i = 0;
-	length = ft_strlen_2d((const char **)tab);
-	copy = (char **)malloc((length + 1) * sizeof(char *));
-	if (!copy)
-		return (NULL);
-	copy[length] = NULL;
-	while (i < length)
+	while (s1[i] != '\0' && s2[i] != '\0')
 	{
-		copy[i] = ft_strdup(tab[i]);
+		if (s1[i] != s2[i])
+			return (1);
 		i++;
 	}
-	// free(tab);
-	return (copy);
+	return (0);
 }

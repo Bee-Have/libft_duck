@@ -6,7 +6,7 @@
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/29 16:39:22 by amarini-          #+#    #+#             */
-/*   Updated: 2021/06/29 18:47:06 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/07/12 18:54:50 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	ft_print_tab(char **tab)
 	while (row < ft_strlen_2d((const char **)tab))
 	{
 		write(1, tab[row], ft_strlen(tab[row]));
-		write(1, "-", 1);
+		write(1, " ", 1);
 		row++;
 	}
 	write(1, "\n", 1);

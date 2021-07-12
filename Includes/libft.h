@@ -6,7 +6,7 @@
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/02 12:38:44 by amarini-          #+#    #+#             */
-/*   Updated: 2021/07/12 15:27:58 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/07/12 18:18:21 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,7 @@ int				ft_isprint(int c);
 int				ft_memcmp(const void *s1, const void *s2, size_t n);
 int				compare(unsigned char chr1, unsigned char chr2);
 char			*ft_strchr(const char *s, int c);
+int				ft_strcmp(const char *s1, const char *s2);
 int				ft_strlen(const char *s);
 int				ft_strncmp(const char *s1, const char *s2, size_t n);
 char			*ft_strnstr(const char *haystack, const char *needle,
