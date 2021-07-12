@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tabdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
+/*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/06 20:11:32 by user42            #+#    #+#             */
-/*   Updated: 2021/07/06 20:20:20 by user42           ###   ########.fr       */
+/*   Updated: 2021/07/12 10:42:19 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	**ft_tabdup(char **tab)
 	int		i;
 
 	i = 0;
-	length = ft_strlen_2d(tab);
+	length = ft_strlen_2d((const char **)tab);
 	copy = (char **)malloc((length + 1) * sizeof(char *));
 	if (!copy)
 		return (NULL);
