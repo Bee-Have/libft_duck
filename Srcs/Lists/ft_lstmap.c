@@ -6,7 +6,7 @@
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/15 10:17:09 by amarini-          #+#    #+#             */
-/*   Updated: 2021/06/28 12:21:39 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/07/12 15:27:39 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ t_list	*ft_lstmap(t_list *lst, long long int (*f)(long long int),
 	head = new;
 	while (lst->next != NULL)
 	{
-		new->content = f(lst->content);
+		new->value = f(lst->value);
 		new->next = (t_list *)malloc(sizeof(t_list));
 		if (!new->next)
 		{
@@ -36,7 +36,7 @@ t_list	*ft_lstmap(t_list *lst, long long int (*f)(long long int),
 		new = new->next;
 		lst = lst->next;
 	}
-	new->content = f(lst->content);
+	new->value = f(lst->value);
 	new->next = NULL;
 	return (head);
 }
