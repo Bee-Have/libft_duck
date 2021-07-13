@@ -6,7 +6,7 @@
 #    By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/15 16:55:27 by amarini-          #+#    #+#              #
-#    Updated: 2021/07/12 18:18:48 by amarini-         ###   ########.fr        #
+#    Updated: 2021/07/13 12:20:00 by amarini-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,7 +36,8 @@ SRCS = ft_add_tab.c ft_erase.c \
 		ft_lstiter.c ft_lstlast.c \
 		ft_lstmap.c ft_lstnew.c \
 		ft_lstsize.c \
-		ft_putchar.c ft_putstr.c ft_print_tab.c\
+		ft_putchar.c ft_putstr.c \
+		ft_print_tab.c ft_putnbr.c \
 		ft_calloc.c ft_memccpy.c \
 		ft_memchr.c ft_memcpy.c \
 		ft_memset.c ft_strdup.c \

@@ -1,30 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_tab.c                                     :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/06/29 16:39:22 by amarini-          #+#    #+#             */
-/*   Updated: 2021/07/13 10:40:06 by amarini-         ###   ########.fr       */
+/*   Created: 2021/07/13 11:48:49 by amarini-          #+#    #+#             */
+/*   Updated: 2021/07/13 12:20:27 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../Includes/libft.h"
 
-void	ft_print_tab(char **tab)
+void	ft_putnbr(int nbr)
 {
-	int		row;
+	char	*result;
 
-	// if (!tab)
-	// 	return ;
-	row = 0;
-	while (row < ft_strlen_2d((const char **)tab))
-	{
-		write(1, tab[row], ft_strlen(tab[row]));
-		write(1, "-", 1);
-		row++;
-	}
-	write(1, "\n", 1);
+	result = ft_itoa(nbr);
+	write(1, result, ft_strlen(result));
 	return ;
 }
