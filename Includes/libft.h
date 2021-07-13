@@ -6,7 +6,7 @@
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/02 12:38:44 by amarini-          #+#    #+#             */
-/*   Updated: 2021/07/13 12:19:36 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/07/13 14:14:46 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 
 //Arrays
 int				ft_strlen_2d(const char **s);
-char			**ft_strjoin_2d(char **s1, char **s2);
+char			**ft_tabjoin(char **s1, char **s2);
 char			**ft_erase(char **str, int start, int amount);
 char			**ft_add_tab(char **tab, char *str);
 char			**ft_make_tab(char *str);

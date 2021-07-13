@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strjoin_2d.c                                    :+:      :+:    :+:   */
+/*   ft_tabjoin.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,7 +12,7 @@
 
 #include "../../Includes/libft.h"
 
-char	**ft_strjoin_2d(char **s1, char **s2)
+char	**ft_tabjoin(char **s1, char **s2)
 {
 	int		i;
 	int		j;

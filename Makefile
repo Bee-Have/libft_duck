@@ -6,7 +6,7 @@
 #    By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/15 16:55:27 by amarini-          #+#    #+#              #
-#    Updated: 2021/07/13 12:20:00 by amarini-         ###   ########.fr        #
+#    Updated: 2021/07/13 14:14:46 by amarini-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,7 @@ INC_FLAGS = -I$(INC_DIR)
 vpath %.c $(foreach dir, $(SRCS_DIR), $(dir):)
 
 SRCS = ft_add_tab.c ft_erase.c \
-		ft_strjoin_2d.c ft_strlen_2d.c \
+		ft_tabjoin.c ft_strlen_2d.c \
 		ft_make_tab.c ft_tabdup.c \
 		ft_isalnum.c ft_isalpha.c \
 		ft_isascii.c ft_isdigit.c \
