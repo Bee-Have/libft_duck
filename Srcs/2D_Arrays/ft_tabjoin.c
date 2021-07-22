@@ -24,8 +24,8 @@ char	**ft_tabjoin(char **s1, char **s2)
 		return (NULL);
 	i = 0;
 	j = 0;
-	len_s1 = ft_strlen_2d((const char **)s1);
-	len_s2 = ft_strlen_2d((const char **)s2);
+	len_s1 = ft_tablen((const char **)s1);
+	len_s2 = ft_tablen((const char **)s2);
 	str = (char **)malloc((len_s1 + len_s2 + 1) * sizeof(char *));
 	if (!str)
 		return (NULL);

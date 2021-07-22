@@ -6,7 +6,7 @@
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/28 18:36:36 by amarini-          #+#    #+#             */
-/*   Updated: 2021/06/29 15:50:42 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/07/22 16:24:00 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	**ft_erase(char **str, int start, int amount)
 	int		i;
 
 	i = start;
-	length = ft_strlen_2d((const char **)str) - amount;
+	length = ft_tablen((const char **)str) - amount;
 	result = (char **)malloc((length + 1) * sizeof(char *));
 	if (!result)
 		return (NULL);

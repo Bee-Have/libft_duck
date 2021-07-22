@@ -6,7 +6,7 @@
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/06 20:11:32 by user42            #+#    #+#             */
-/*   Updated: 2021/07/12 19:03:22 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/07/22 16:24:13 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	**ft_tabdup(char **tab)
 	int		i;
 
 	i = 0;
-	length = ft_strlen_2d((const char **)tab);
+	length = ft_tablen((const char **)tab);
 	copy = (char **)malloc((length + 1) * sizeof(char *));
 	if (!copy)
 		return (NULL);

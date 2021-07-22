@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen_2d.c                                     :+:      :+:    :+:   */
+/*   ft_tablen.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,7 +12,7 @@
 
 #include "../../Includes/libft.h"
 
-int	ft_strlen_2d(const char **s)
+int	ft_tablen(const char **s)
 {
 	int		len;
 

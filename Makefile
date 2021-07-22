@@ -5,12 +5,12 @@ CFLAGS = -Wall -Wextra -Werror
 SRCS_DIR = $(shell find Srcs -type d)
 OBJS_DIR = Objs
 INC_DIR = ./Includes/libft
-INC_FLAGS = -I$(INC_DIR)
+INCLUDES = -I$(INC_DIR)
 
 vpath %.c $(foreach dir, $(SRCS_DIR), $(dir):)
 
 SRCS = ft_add_tab.c ft_erase.c \
-		ft_tabjoin.c ft_strlen_2d.c \
+		ft_tabjoin.c ft_tablen.c \
 		ft_make_tab.c ft_tabdup.c \
 		ft_isalnum.c ft_isalpha.c \
 		ft_isascii.c ft_isdigit.c \
@@ -53,7 +53,7 @@ $(NAME): $(OBJS)
 
 $(OBJS_DIR)/%.o: %.c
 	@mkdir -p $(dir $@)
-	@$(CC) $(CFLAGS) -c $< -o $@
+	@$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
 
 re: fclean all
 

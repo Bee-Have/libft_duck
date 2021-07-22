@@ -6,7 +6,7 @@
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/02 12:38:44 by amarini-          #+#    #+#             */
-/*   Updated: 2021/07/13 14:14:46 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/07/22 16:24:00 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 # include <stdlib.h>
 
 //Arrays
-int				ft_strlen_2d(const char **s);
+int				ft_tablen(const char **s);
 char			**ft_tabjoin(char **s1, char **s2);
 char			**ft_erase(char **str, int start, int amount);
 char			**ft_add_tab(char **tab, char *str);
