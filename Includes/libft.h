@@ -6,7 +6,7 @@
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/02 12:38:44 by amarini-          #+#    #+#             */
-/*   Updated: 2021/07/22 16:24:00 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/07/29 15:53:29 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ char			**ft_erase(char **str, int start, int amount);
 char			**ft_add_tab(char **tab, char *str);
 char			**ft_make_tab(char *str);
 char			**ft_tabdup(char **tab);
+void			ft_freetab(char **tab);
 
 //Checks
 int				ft_isalnum(int c);

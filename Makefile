@@ -12,6 +12,7 @@ vpath %.c $(foreach dir, $(SRCS_DIR), $(dir):)
 SRCS = ft_add_tab.c ft_erase.c \
 		ft_tabjoin.c ft_tablen.c \
 		ft_make_tab.c ft_tabdup.c \
+		ft_freetab.c \
 		ft_isalnum.c ft_isalpha.c \
 		ft_isascii.c ft_isdigit.c \
 		ft_isprint.c ft_memcmp.c \
