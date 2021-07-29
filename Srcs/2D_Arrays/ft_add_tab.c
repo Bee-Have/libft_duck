@@ -6,7 +6,7 @@
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/29 15:51:54 by amarini-          #+#    #+#             */
-/*   Updated: 2021/07/29 15:59:47 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/07/29 18:21:54 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,13 @@ char	**ft_add_tab(char **tab, char *str)
 		return (NULL);
 	result[length] = NULL;
 	if (tab)
+	{
 		while (i < (length - 1))
 		{
 			result[i] = ft_strdup(tab[i]);
 			i++;
 		}
+	}
 	result[i] = ft_strdup(str);
 	ft_freetab(tab);
 	return (result);

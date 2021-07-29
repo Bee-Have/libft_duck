@@ -30,20 +30,21 @@ char	**ft_tabjoin(char **s1, char **s2)
 	if (!str)
 		return (NULL);
 	str[len_s1 + len_s2] = NULL;
-	while (i < len_s1)
-	{
-		str[i] = ft_strdup(s1[j]);
-		i++;
-		j++;
-	}
-	j = 0;
-	while (i < (len_s1 + len_s2))
-	{
-		str[i] = ft_strdup(s2[j]);
-		i++;
-		j++;
-	}
+	fill_tab(&str, s1, len_s1, &i);
+	fill_tab(&str, s2, len_s1 + len_s2, &i);
 	return (str);
 }
 
+void	fill_tab(char ***dst, char **src, int length, int *index)
+{
+	int	i;
 
+	i = 0;
+	while ((*index) < length)
+	{
+		(*dst)[(*index)] = ft_strdup(src[i]);
+		i++;
+		(*index)++;
+	}
+	return ;
+}
