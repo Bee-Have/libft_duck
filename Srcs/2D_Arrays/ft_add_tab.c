@@ -6,12 +6,13 @@
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/29 15:51:54 by amarini-          #+#    #+#             */
-/*   Updated: 2021/07/22 16:24:00 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/07/29 15:31:37 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../Includes/libft.h"
 
+//this is a comment, delete me
 char	**ft_add_tab(char **tab, char *str)
 {
 	char	**result;
