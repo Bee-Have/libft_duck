@@ -6,12 +6,11 @@
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/01 08:57:15 by amarini-          #+#    #+#             */
-/*   Updated: 2021/06/28 12:28:43 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/08/02 11:50:33 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../Includes/libft.h"
-// #include "../../../push_swap.h"
 
 int	count_digit(const char *str, int index)
 {
