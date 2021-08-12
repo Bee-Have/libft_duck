@@ -6,7 +6,7 @@
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/01 07:41:45 by amarini-          #+#    #+#             */
-/*   Updated: 2021/06/16 14:25:18 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/08/12 13:42:09 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,15 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (!s)
 		return (NULL);
 	if (ft_strlen(s) == 0 || (int)start >= ft_strlen(s))
+	{
+		printf("should not\n");
 		return (return_empty());
+	}
 	if (ft_strlen(s) < (int)len)
+	{
+		printf("s_len[%d] len-[%d]\n", ft_strlen((const char *)s), (int)len);
 		result = (char *)malloc(ft_strlen(s) + 1 * sizeof(char));
+	}
 	else
 		result = (char *)malloc((len + 1) * sizeof(char));
 	if (!result)

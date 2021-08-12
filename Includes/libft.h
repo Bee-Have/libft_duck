@@ -6,7 +6,7 @@
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/02 12:38:44 by amarini-          #+#    #+#             */
-/*   Updated: 2021/08/12 11:17:07 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/08/12 17:24:12 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 # include <stdlib.h>
 
 //Arrays
-int				ft_tablen(const char **s);
+int				ft_tablen(char **s);
 char			**ft_tabjoin(char **s1, char **s2);
 void			fill_tab(char ***dst, char **src, int length, int *index);
 char			**ft_erase(char **str, int start, int amount);
@@ -38,7 +38,7 @@ int				ft_memcmp(const void *s1, const void *s2, size_t n);
 int				compare(unsigned char chr1, unsigned char chr2);
 char			*ft_strchr(const char *s, int c);
 int				ft_strcmp(const char *s1, const char *s2);
-int				ft_strlen(const char *s);
+int				ft_strlen(char *s);
 int				ft_strncmp(const char *s1, const char *s2, size_t n);
 char			*ft_strnstr(const char *haystack, const char *needle,
 					size_t len);

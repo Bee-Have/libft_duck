@@ -12,7 +12,7 @@
 
 #include "../../Includes/libft.h"
 
-int	ft_tablen(const char **s)
+int	ft_tablen(char **s)
 {
 	int		len;
 
