@@ -32,6 +32,7 @@ SRCS = ft_add_tab.c ft_erase.c \
 		ft_memset.c ft_strdup.c \
 		ft_strlcat.c ft_strlcpy.c \
 		ft_strmapi.c ft_substr.c \
+		ft_strnew.c \
 		ft_bzero.c ft_memmove.c \
 		ft_split.c ft_strjoin.c \
 		ft_strtrim.c ft_tolower.c \

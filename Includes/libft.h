@@ -6,7 +6,7 @@
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/02 12:38:44 by amarini-          #+#    #+#             */
-/*   Updated: 2021/07/29 18:25:40 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/08/12 11:17:07 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,6 +91,7 @@ size_t			ft_strlcpy(char *dst, const char *src, size_t dstsize);
 char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char			*ft_substr(char const *s, unsigned int start, size_t len);
 char			*return_empty(void);
+char			*ft_strnew(char c);
 //
 void			ft_bzero(void *s, size_t n);
 void			*ft_memmove(void *dst, const void *src, size_t len);
