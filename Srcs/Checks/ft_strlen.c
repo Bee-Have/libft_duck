@@ -6,13 +6,13 @@
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/01 07:32:53 by amarini-          #+#    #+#             */
-/*   Updated: 2021/08/12 17:24:46 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/08/13 13:26:06 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../Includes/libft.h"
 
-int	ft_strlen(char *s)
+int	ft_strlen(const char *s)
 {
 	int		len;
 
