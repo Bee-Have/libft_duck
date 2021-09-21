@@ -6,7 +6,7 @@
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/02 12:38:44 by amarini-          #+#    #+#             */
-/*   Updated: 2021/08/13 13:25:48 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/09/21 15:55:17 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ char			**ft_tabdup(char **tab);
 void			ft_freetab(char **tab);
 
 //Checks
+int				ft_intcmp(int a, int b);
 int				ft_isalnum(int c);
 int				ft_isalpha(int c);
 int				ft_isalpha(int c);
