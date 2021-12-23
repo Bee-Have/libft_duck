@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/02 12:38:44 by amarini-          #+#    #+#             */
-/*   Updated: 2021/09/21 15:55:17 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/12/16 18:22:24 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,9 @@ char			**ft_tabdup(char **tab);
 void			ft_freetab(char **tab);
 
 //Checks
+//2D_Arrays
+char			*ft_tabntab(char **haystack, const char *needle, int max);
+//Char
 int				ft_intcmp(int a, int b);
 int				ft_isalnum(int c);
 int				ft_isalpha(int c);
@@ -37,6 +40,7 @@ int				ft_isdigit(int c);
 int				ft_isprint(int c);
 int				ft_memcmp(const void *s1, const void *s2, size_t n);
 int				compare(unsigned char chr1, unsigned char chr2);
+//Strings
 char			*ft_strchr(const char *s, int c);
 int				ft_strcmp(const char *s1, const char *s2);
 int				ft_strlen(const char *s);
