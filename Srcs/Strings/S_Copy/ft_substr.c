@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/01 07:41:45 by amarini-          #+#    #+#             */
-/*   Updated: 2021/08/19 12:35:56 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/12/23 17:03:16 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../../Includes/libft.h"
+#include "libft.h"
 
 char	*return_empty(void)
 {

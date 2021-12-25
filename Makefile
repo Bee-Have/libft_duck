@@ -2,9 +2,10 @@ NAME = libft.a
 
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
+
 SRCS_DIR = $(shell find Srcs -type d)
 OBJS_DIR = Objs
-INC_DIR = ./Includes/libft
+INC_DIR = ./Includes/
 INCLUDES = -I$(INC_DIR)
 
 vpath %.c $(foreach dir, $(SRCS_DIR), $(dir):)
@@ -38,6 +39,7 @@ SRCS = ft_add_tab.c ft_erase.c \
 		ft_split.c ft_strjoin.c \
 		ft_strtrim.c ft_tolower.c \
 		ft_toupper.c
+
 OBJS = $(addprefix $(OBJS_DIR)/,$(SRCS:.c=.o))
 
 all: $(NAME)

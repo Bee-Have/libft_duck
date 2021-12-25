@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/01 08:57:15 by amarini-          #+#    #+#             */
-/*   Updated: 2021/08/02 11:50:33 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/12/23 17:00:15 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../Includes/libft.h"
+#include "libft.h"
 
 int	count_digit(const char *str, int index)
 {

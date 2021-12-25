@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_add_tab.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/29 15:51:54 by amarini-          #+#    #+#             */
-/*   Updated: 2021/07/29 18:21:54 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/12/23 17:13:19 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../Includes/libft.h"
+#include "libft.h"
 
 char	**ft_add_tab(char **tab, char *str)
 {

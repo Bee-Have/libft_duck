@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tabdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/06 20:11:32 by user42            #+#    #+#             */
-/*   Updated: 2021/07/29 18:21:11 by amarini-         ###   ########.fr       */
+/*   Updated: 2021/12/23 16:59:56 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../Includes/libft.h"
+#include "libft.h"
 
 char	**ft_tabdup(char **tab)
 {

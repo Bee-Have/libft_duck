@@ -6,7 +6,7 @@
 /*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/16 15:12:03 by user42            #+#    #+#             */
-/*   Updated: 2021/12/16 18:21:36 by user42           ###   ########.fr       */
+/*   Updated: 2021/12/25 18:27:20 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,12 @@ char	*ft_tabntab(char **haystack, const char *needle, int max)
 		while (haystack[row][col] != '\0')
 		{
 			i = 0;
-			while (col < max && needle[i] != '\0'
+			while ((int)col < max && needle[i] != '\0'
 				&& haystack[row][col + i] == needle[i])
 			{
 				if (needle[i + 1] == '\0')
 					return (ft_strdup(haystack[row]));
-					++i;
+				++i;
 			}
 			++col;
 		}
