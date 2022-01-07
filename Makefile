@@ -45,20 +45,20 @@ OBJS = $(addprefix $(OBJS_DIR)/,$(SRCS:.c=.o))
 all: $(NAME)
 
 test:
-	@echo $(SRCS)
-	@echo $(OBJS)
-	@echo $(OBJS_DIR)
-	@echo $(SRCS_DIR)
-	@echo $(INC_DIR)
+	echo $(SRCS)
+	echo $(OBJS)
+	echo $(OBJS_DIR)
+	echo $(SRCS_DIR)
+	echo $(INC_DIR)
 
 $(NAME): $(OBJS)
-	@ar rc $@ $^
-	@ranlib $(NAME)
-	@echo "Libft finished compiling :D"
+	ar rc $@ $^
+	ranlib $(NAME)
+	echo "Libft finished compiling :D"
 
 $(OBJS_DIR)/%.o: %.c
-	@mkdir -p $(dir $@)
-	@$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
+	mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
 
 re: fclean all
 
