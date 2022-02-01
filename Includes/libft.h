@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
+/*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/02 12:38:44 by amarini-          #+#    #+#             */
-/*   Updated: 2021/12/23 16:56:18 by user42           ###   ########.fr       */
+/*   Updated: 2022/02/01 18:39:03 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -116,6 +116,8 @@ int				calc_len(char const *str, char const *set);
 int				calc_sufix(char const *str, char const *set, int maxlen);
 int				calc_prefix(char const *str, char const *set, int istr);
 int				set_occurence(char const *set, char current, int i);
+
+char			*ft_del_one(char *str, int index);
 
 int				ft_tolower(int c);
 int				ft_toupper(int c);

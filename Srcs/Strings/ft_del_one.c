@@ -1,31 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_tab.c                                     :+:      :+:    :+:   */
+/*   ft_del_one.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/06/29 16:39:22 by amarini-          #+#    #+#             */
-/*   Updated: 2022/02/01 18:19:25 by amarini-         ###   ########.fr       */
+/*   Created: 2022/02/01 18:33:30 by amarini-          #+#    #+#             */
+/*   Updated: 2022/02/01 18:38:36 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_print_tab(char **tab)
+char	*ft_del_one(char *str, int index)
 {
-	int		row;
+	int		len;
+	int		i;
+	int		j;
+	char	*res;
 
-	row = 0;
-	while (tab[row])
+	i = 0;
+	j = 0;
+	len = ft_strlen(str) - 1;
+	res = (char *)malloc((len + 1) * sizeof(char));
+	if (!res)
+		return (NULL);
+	res[len] = '\0';
+	while (str[j] != '\0')
 	{
-		write(1, "[", 1);
-		write(1, tab[row], ft_strlen(tab[row]));
-		write(1, "]", 1);
-		write(1, "\n", 1);
-		row++;
+		if (j == index)
+			j++;
+		res[i] = str[j];
+		++j;
+		++i;
 	}
-	ft_putstr("(null)");
-	write(1, "\n", 1);
-	return ;
+	return (res);
 }
