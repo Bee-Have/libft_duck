@@ -1,40 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_add_tab.c                                       :+:      :+:    :+:   */
+/*   ft_strsrch.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/06/29 15:51:54 by amarini-          #+#    #+#             */
-/*   Updated: 2022/02/10 11:43:58 by amarini-         ###   ########.fr       */
+/*   Created: 2022/02/10 13:22:24 by amarini-          #+#    #+#             */
+/*   Updated: 2022/02/10 13:29:16 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	**ft_add_tab(char **arr, char *str)
+int	ft_strsrch(char *str, char c)
 {
-	char	**result;
-	int		length;
-	int		i;
+	int	i;
 
-	length = 1;
-	if (arr)
-		length = ft_tablen((const char **)arr) + 1;
 	i = 0;
-	result = (char **)malloc((length + 1) * sizeof(char *));
-	if (!result)
-		return (NULL);
-	result[length] = NULL;
-	if (arr)
+	while (str[i] != '\0')
 	{
-		while (i < (length - 1))
-		{
-			result[i] = ft_strdup(arr[i]);
-			i++;
-		}
+		if (str[i] == c)
+			return(i);
+		++i;
 	}
-	result[i] = ft_strdup(str);
-	ft_freetab(arr);
-	return (result);
+	return (-1);
 }

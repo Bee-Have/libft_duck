@@ -1,40 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_add_tab.c                                       :+:      :+:    :+:   */
+/*   ft_insert_tab.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/06/29 15:51:54 by amarini-          #+#    #+#             */
-/*   Updated: 2022/02/10 11:43:58 by amarini-         ###   ########.fr       */
+/*   Created: 2022/02/10 14:28:36 by amarini-          #+#    #+#             */
+/*   Updated: 2022/02/10 19:54:12 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	**ft_add_tab(char **arr, char *str)
+char	**ft_insert_tab(char **arr, char *str, int index)
 {
-	char	**result;
-	int		length;
+	char	**res;
+	int		len;
 	int		i;
+	int		i_src;
 
-	length = 1;
-	if (arr)
-		length = ft_tablen((const char **)arr) + 1;
 	i = 0;
-	result = (char **)malloc((length + 1) * sizeof(char *));
-	if (!result)
+	i_src = 0;
+	len = ft_tablen((const char **)arr) + 1;
+	if (arr[index] == NULL)
+		--len;
+	res = (char **)malloc((len + 1) * sizeof(char *));
+	if (!res)
 		return (NULL);
-	result[length] = NULL;
-	if (arr)
+	res[len] = NULL;
+	while (i < len)
 	{
-		while (i < (length - 1))
+		if (i == index)
+			res[i] = ft_strdup(str);
+		else
 		{
-			result[i] = ft_strdup(arr[i]);
-			i++;
+			res[i] = ft_strdup(arr[i_src]);
+			++i_src;
 		}
+		++i;
 	}
-	result[i] = ft_strdup(str);
+	if (arr[index] == NULL)
+		res[i] = ft_strdup(str);
 	ft_freetab(arr);
-	return (result);
+	return (res);
 }

@@ -6,7 +6,7 @@
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/02 12:38:44 by amarini-          #+#    #+#             */
-/*   Updated: 2022/02/01 18:39:03 by amarini-         ###   ########.fr       */
+/*   Updated: 2022/02/10 15:09:34 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,11 @@ int				ft_tablen(const char **s);
 char			**ft_tabjoin(char **s1, char **s2);
 void			fill_tab(char ***dst, char **src, int length, int *index);
 char			**ft_erase(char **str, int start, int amount);
-char			**ft_add_tab(char **tab, char *str);
+char			**ft_add_tab(char **arr, char *str);
 char			**ft_make_tab(char *str);
-char			**ft_tabdup(char **tab);
-void			ft_freetab(char **tab);
+char			**ft_tabdup(char **arr);
+void			ft_freetab(char **arr);
+char			**ft_insert_tab(char **arr, char *str, int index);
 
 //Checks
 //2D_Arrays
@@ -48,6 +49,7 @@ int				ft_strncmp(const char *s1, const char *s2, size_t n);
 char			*ft_strnstr(const char *haystack, const char *needle,
 					size_t len);
 char			*ft_strrchr(const char *s, int c);
+int				ft_strsrch(char *str, char c);
 
 //Digits
 int				count_digit(const char *str, int index);
@@ -81,7 +83,7 @@ int				ft_lstsize(t_list *lst);
 void			ft_putchar(char c);
 void			ft_putnbr(int nbr);
 void			ft_putstr(char *str);
-void			ft_print_tab(char **tab);
+void			ft_print_tab(char **arr);
 
 //Strings
 //S_Copy

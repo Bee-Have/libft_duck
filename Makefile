@@ -13,14 +13,14 @@ vpath %.c $(foreach dir, $(SRCS_DIR), $(dir):)
 SRCS = ft_add_tab.c ft_erase.c \
 		ft_tabjoin.c ft_tablen.c \
 		ft_make_tab.c ft_tabdup.c \
-		ft_freetab.c \
+		ft_freetab.c ft_insert_tab.c \
 		ft_tabntab.c \
 		ft_intcmp.c ft_isalnum.c ft_isalpha.c \
 		ft_isascii.c ft_isdigit.c \
 		ft_isprint.c ft_memcmp.c \
 		ft_strchr.c ft_strcmp.c ft_strlen.c \
 		ft_strnstr.c ft_strncmp.c \
-		ft_strrchr.c\
+		ft_strrchr.c ft_strsrch.c \
 		ft_atoi.c ft_itoa.c \
 		ft_lstadd_back.c ft_lstadd_front.c \
 		ft_lstclear.c ft_lstdelone.c \

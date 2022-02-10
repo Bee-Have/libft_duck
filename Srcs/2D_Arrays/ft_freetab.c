@@ -3,28 +3,28 @@
 /*                                                        :::      ::::::::   */
 /*   ft_freetab.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
+/*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/29 15:51:18 by amarini-          #+#    #+#             */
-/*   Updated: 2021/12/23 16:59:42 by user42           ###   ########.fr       */
+/*   Updated: 2022/02/10 11:44:58 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_freetab(char **tab)
+void	ft_freetab(char **arr)
 {
 	int		i;
 
 	i = 0;
-	if (!tab)
+	if (!arr)
 		return ;
-	while (tab[i])
+	while (arr[i])
 	{
-		free(tab[i]);
-		tab[i] = NULL;
+		free(arr[i]);
+		arr[i] = NULL;
 		i++;
 	}
-	free(tab);
-	tab = NULL;
+	free(arr);
+	arr = NULL;
 }
