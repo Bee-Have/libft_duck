@@ -6,7 +6,7 @@
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 14:28:36 by amarini-          #+#    #+#             */
-/*   Updated: 2022/02/11 11:58:04 by amarini-         ###   ########.fr       */
+/*   Updated: 2022/02/18 23:09:36 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,10 @@ char	**ft_insert_tab(char **arr, char *str, int index)
 
 	i = 0;
 	i_src = 0;
-	len = ft_tablen((const char **)arr) + 1;
+	if (!arr)
+		len = 1;
+	else
+		len = ft_tablen((const char **)arr) + 1;
 	res = (char **)malloc((len + 1) * sizeof(char *));
 	if (!res)
 		return (NULL);
