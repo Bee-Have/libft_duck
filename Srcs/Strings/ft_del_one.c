@@ -6,7 +6,7 @@
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/01 18:33:30 by amarini-          #+#    #+#             */
-/*   Updated: 2022/02/19 08:00:18 by amarini-         ###   ########.fr       */
+/*   Updated: 2022/02/22 11:39:16 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char	*ft_del_one(char *str, int index)
 	{
 		if (j == index)
 			j++;
-			res[i] = str[j];
+		res[i] = str[j];
 		++j;
 		++i;
 	}
