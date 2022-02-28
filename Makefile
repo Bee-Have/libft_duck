@@ -27,7 +27,7 @@ SRCS = ft_add_tab.c ft_erase.c \
 		ft_lstiter.c ft_lstlast.c \
 		ft_lstmap.c ft_lstnew.c \
 		ft_lstsize.c \
-		ft_putchar.c ft_putstr.c \
+		ft_putchar.c ft_putstr.c ft_putstr_fd.c \
 		ft_print_tab.c ft_putnbr.c \
 		ft_calloc.c ft_memccpy.c \
 		ft_memchr.c ft_memcpy.c \
