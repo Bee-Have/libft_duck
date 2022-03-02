@@ -6,7 +6,7 @@
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/02 12:38:44 by amarini-          #+#    #+#             */
-/*   Updated: 2022/02/28 19:01:34 by amarini-         ###   ########.fr       */
+/*   Updated: 2022/03/02 22:31:04 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,6 +94,7 @@ void			*ft_memchr(const void *s, int c, size_t n);
 void			*ft_memcpy(void *dst, const void *src, size_t n);
 void			*ft_memset(void *b, int c, size_t len);
 char			*ft_strdup(const char *s1);
+char			*ft_strndup(const char *s1, int n);
 size_t			ft_strlcat(char *dst, const char *src, size_t dstsize);
 size_t			ft_strlcpy(char *dst, const char *src, size_t dstsize);
 char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
