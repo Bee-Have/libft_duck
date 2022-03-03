@@ -6,21 +6,19 @@
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 14:28:36 by amarini-          #+#    #+#             */
-/*   Updated: 2022/02/23 06:52:09 by amarini-         ###   ########.fr       */
+/*   Updated: 2022/03/03 22:58:02 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+static char	**cpy_tab(char **src, char **dst, char *str, int index);
+
 char	**ft_insert_tab(char **arr, char *str, int index)
 {
 	char	**res;
 	int		len;
-	int		i;
-	int		i_src;
 
-	i = 0;
-	i_src = 0;
 	if (!str)
 	{
 		res = ft_tabdup(arr);
@@ -35,17 +33,28 @@ char	**ft_insert_tab(char **arr, char *str, int index)
 	if (!res)
 		return (NULL);
 	res[len] = NULL;
-	while (i < len)
+	res = cpy_tab(arr, res, str, index);
+	ft_freetab(arr);
+	return (res);
+}
+
+static char	**cpy_tab(char **src, char **dst, char *str, int index)
+{
+	int	i;
+	int	i_src;
+
+	i = 0;
+	i_src = 0;
+	while (i < ft_tablen((const char **)src) + 1)
 	{
 		if (i == index)
-			res[i] = ft_strdup(str);
+			dst[i] = ft_strdup(str);
 		else
 		{
-			res[i] = ft_strdup(arr[i_src]);
+			dst[i] = ft_strdup(src[i_src]);
 			++i_src;
 		}
 		++i;
 	}
-	ft_freetab(arr);
-	return (res);
+	return (dst);
 }

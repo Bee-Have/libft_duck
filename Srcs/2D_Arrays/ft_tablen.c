@@ -18,7 +18,7 @@ int	ft_tablen(const char **s)
 
 	len = 0;
 	if (!s)
-		return (-1);
+		return (0);
 	while (s[len] != NULL)
 		len++;
 	return (len);

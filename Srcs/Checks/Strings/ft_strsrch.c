@@ -6,7 +6,7 @@
 /*   By: amarini- <amarini-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 13:22:24 by amarini-          #+#    #+#             */
-/*   Updated: 2022/02/10 13:29:16 by amarini-         ###   ########.fr       */
+/*   Updated: 2022/03/03 22:25:23 by amarini-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ft_strsrch(char *str, char c)
 	while (str[i] != '\0')
 	{
 		if (str[i] == c)
-			return(i);
+			return (i);
 		++i;
 	}
 	return (-1);
